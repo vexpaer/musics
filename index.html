@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Musics_Vexpaer</title>
+<link rel="stylesheet" href="build/smusic.min.css">
+</head>
+<body>
+    <div id="my-music"></div>
+    <script src="songList.js"></script>
+    <script src="build/smusic.min.js"></script>
+    <script>
+        var smusic = SMusic(songList, {
+            container : document.getElementById('my-music')
+        });
+        smusic.init()
+    </script>
+</body>
+</html>
